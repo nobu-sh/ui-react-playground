@@ -1,107 +1,155 @@
 // Smooth Modern Font
 @font-face {
-  src: url(../assets/fonts/Inter-Black.ttf) format('truetype');
-  font-weight: 400;
-  font-family: 'InterBlack';
-  font-display: swap;
-}
-@font-face {
-  src: url(../assets/fonts/Inter-ExtraBold.ttf) format('truetype');
-  font-weight: 400;
-  font-family: 'InterExtraBold';
-  font-display: swap;
-}
-@font-face {
-  src: url(../assets/fonts/Inter-Bold.ttf) format('truetype');
-  font-weight: 400;
-  font-family: 'InterBold';
-  font-display: swap;
-}
-@font-face {
-  src: url(../assets/fonts/Inter-SemiBold.ttf) format('truetype');
-  font-weight: 400;
-  font-family: 'InterSemiBold';
-  font-display: swap;
-}
-@font-face {
-  src: url(../assets/fonts/Inter-Regular.ttf) format('truetype');
-  font-weight: 400;
+  src: url('../assets/fonts/Inter Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
   font-family: 'Inter';
   font-display: swap;
 }
 @font-face {
-  src: url(../assets/fonts/Inter-Medium.ttf) format('truetype');
-  font-weight: 400;
-  font-family: 'InterMedium';
+  src: url('../assets/fonts/Inter ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-family: 'Inter';
   font-display: swap;
 }
 @font-face {
-  src: url(../assets/fonts/Inter-Light.ttf) format('truetype');
-  font-weight: 400;
-  font-family: 'InterLight';
+  src: url('../assets/fonts/Inter Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Inter';
   font-display: swap;
 }
 @font-face {
-  src: url(../assets/fonts/Inter-ExtraLight.ttf) format('truetype');
-  font-weight: 400;
-  font-family: 'InterExtraLight';
+  src: url('../assets/fonts/Inter SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Inter';
   font-display: swap;
 }
 @font-face {
-  src: url(../assets/fonts/Inter-Thin.ttf) format('truetype');
+  src: url('../assets/fonts/Inter Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url('../assets/fonts/Inter Regular.woff2') format('woff2');
   font-weight: 400;
-  font-family: 'InterThin';
+  font-style: normal;
+  font-family: 'Inter';
+  font-display: swap;
+}
+@font-face {
+  src: url('../assets/fonts/Inter Light.woff2') format('woff2');
+  font-weight: 300;
+  font-family: 'Inter';
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  src: url('../assets/fonts/Inter ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url('../assets/fonts/Inter Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-family: 'Inter';
+  font-style: normal;
   font-display: swap;
 }
 
 // Smooth Tech Font
 @font-face {
-  src: url(../assets/fonts/MSBee-Black.woff2) format('woff2');
-  font-weight: 400;
-  font-family: 'MSBlack';
+  src: url('../assets/fonts/Styrene B Black.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Styrene B';
   font-display: swap;
 }
 @font-face {
-  src: url(../assets/fonts/MSBee-Bold.woff2) format('woff2');
-  font-weight: 400;
-  font-family: 'MSBold';
-  font-display: swap;
-}
-@font-face {
-  src: url(../assets/fonts/MSBee-Medium.woff2) format('woff2');
-  font-weight: 400;
-  font-family: 'MSMedium';
-  font-display: swap;
-}
-@font-face {
-  src: url(../assets/fonts/MSBee-Regular.woff2) format('woff2');
-  font-weight: 400;
-  font-family: 'MSRegular';
-  font-display: swap;
-}
-@font-face {
-  src: url(../assets/fonts/MSBee-Thin.woff2) format('woff2');
-  font-weight: 400;
-  font-family: 'MSThin';
+  src: url('../assets/fonts/Styrene B BlackItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Styrene B';
   font-display: swap;
 }
 
-// Pixel Font
 @font-face {
-  src: url(../assets/fonts/MonoMedium.woff2) format('woff2');
-  font-weight: 400;
-  font-family: 'MonoMedium';
+  src: url('../assets/fonts/Styrene B Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Styrene B';
   font-display: swap;
 }
 @font-face {
-  src: url(../assets/fonts/MonoRegular.woff2) format('woff2');
-  font-weight: 400;
-  font-family: 'MonoRegular';
+  src: url('../assets/fonts/Styrene B BoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-family: 'Styrene B';
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../assets/fonts/Styrene B Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Styrene B';
   font-display: swap;
 }
 @font-face {
-  src: url(../assets/fonts/MonoLight.woff2) format('woff2');
+  src: url('../assets/fonts/Styrene B MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'Styrene B';
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../assets/fonts/Styrene B Regular.woff2') format('woff2');
   font-weight: 400;
-  font-family: 'MonoLight';
+  font-style: normal;
+  font-family: 'Styrene B';
+  font-display: swap;
+}
+@font-face {
+  src: url('../assets/fonts/Styrene B RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Styrene B';
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../assets/fonts/Styrene B Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Styrene B';
+  font-display: swap;
+}
+@font-face {
+  src: url('../assets/fonts/Styrene B LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Styrene B';
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../assets/fonts/Styrene B Thin.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-family: 'Styrene B';
+  font-display: swap;
+}
+@font-face {
+  src: url('../assets/fonts/Styrene B ThinItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-family: 'Styrene B';
   font-display: swap;
 }

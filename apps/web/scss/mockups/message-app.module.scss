@@ -1,0 +1,74 @@
+.MessageApp {
+  // overflow: hidden;
+  overflow: auto;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1d1d1d;
+}
+
+.AndroidContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  // background-image: url('../../assets/message-app/wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.AndroidLockScreen {
+  width: 100%;
+  height: 100%;
+}
+
+.AndroidAppBar {
+  width: 100%;
+  height: 29px;
+  overflow: hidden;
+  // background-color: red;
+  .AppBarContent {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.35rem;
+    .AppBarRight {
+      margin-right: 2.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2px;
+
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+      .AppBarPower {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        svg {
+          width: 12px;
+          height: 12px;
+          // margin-bottom: -0.1px;
+          // margin-left: -0.4px;
+        }
+      }
+    }
+    .AppBarLeft {
+      margin-left: 1rem;
+      .AppBarProvider {
+        font-weight: 400;
+      }
+    }
+  }
+}

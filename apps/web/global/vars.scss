@@ -3,5 +3,9 @@
 html {
   --accent: #a793ff; // #ff93c0 // #9583F4
   --background: #181818;
-  --text: #ffffff
+  --text: #ffffff;
+  --padding: 5rem;
+  @include sm {
+    --padding: 1rem;
+  }
 }

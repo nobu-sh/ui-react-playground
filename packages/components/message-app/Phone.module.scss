@@ -1,0 +1,86 @@
+.Phone {
+  position: relative;
+  // z-index: 3;
+  height: 45rem;
+  width: 24rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #181818;
+  // background-color: #131313;
+  border-radius: 30px;
+  border: 8px solid #131313;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+
+  .ButtonLeft1 {
+    width: 0.5rem;
+    height: 6rem;
+    position: absolute;
+    left: -0.65rem;
+    top: 4rem;
+    // z-index: -1;
+    border-radius: 0.5rem;
+    background-color: #131313;
+  }
+  .ButtonLeft2 {
+    width: 0.5rem;
+    height: 3rem;
+    position: absolute;
+    left: -0.65rem;
+    top: 13rem;
+    // z-index: -1;
+    border-radius: 0.5rem;
+    background-color: #131313;
+  }
+  .ButtonRight {
+    width: 0.5rem;
+    height: 3rem;
+    position: absolute;
+    right: -0.65rem;
+    top: 4rem;
+    // z-index: -1;
+    border-radius: 0.5rem;
+    background-color: #131313;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .Camera {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #131313;
+
+    position: absolute;
+    z-index: 999;
+    top: 0.5rem;
+    right: 1rem;
+
+    div {
+      position: relative;
+      top: 4px;
+      left: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: rgba($color: #fff, $alpha: 0.02);
+    }
+  }
+  .Screen {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    border-radius: 22px;
+
+    .Power {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity calc(0.5s * var(--animation-multiplier)) ease;
+      &[p-sleeping='false'] {
+        opacity: 1;
+      }
+    }
+  }
+}

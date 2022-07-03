@@ -1,19 +1,23 @@
+@import 'global/breakpoints.scss';
+
 .Index {
   overflow: hidden;
-  max-width: 100vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   // justify-content: center;
-  padding: 0 5rem 0 5rem;
+  padding: 0 var(--padding) 0 var(--padding);
   gap: 8rem;
+  user-select: none;
 
   .info {
     h1 {
-      font-size: 4rem;
-      font-family: 'InterBold';
-      width: 40rem;
+      // font-size: 4rem;
+      // font-family: 'Inter';
+      font-weight: 600;
+      width: 500px;
       color: rgba(255, 255, 255, 0.4);
       span.react {
         color: #93b5ff;
@@ -22,21 +26,28 @@
         color: var(--accent);
       }
     }
-    br {
-      margin-top: 1rem;
-    }
     p {
       width: 38rem;
-      font-size: 1.3rem;
+      // font-size: 1.3rem;
       color: rgba(255, 255, 255, 0.4);
+      max-width: 90vw;
       &.license {
         opacity: 70%;
-        font-size: 1.1rem;
-        margin-top: 1rem;
+        // font-size: 1.1rem;
+        margin-top: 0.5rem;
       }
-      a {
-        color: #93b5ff;
-      }
+      // @include md {
+      //   width: 25rem;
+      //   font-size: 0.8rem;
+      //   &.license {
+      //     opacity: 70%;
+      //     font-size: 0.75rem;
+      //     margin-top: 1rem;
+      //   }
+      //   @include xs {
+      //     width: calc(100vw - 5%);
+      //   }
+      // }
     }
 
     button {
@@ -46,7 +57,8 @@
       padding: 1rem 3rem 1rem 3rem;
       border-radius: 6px;
       color: white;
-      font-family: 'InterSemiBold';
+      font-family: 'Inter';
+      font-weight: 500;
       transition: background-color 0.2s ease;
       font-size: 0.9rem;
       &:hover {
@@ -54,17 +66,38 @@
         transition: background-color 0.2s ease;
         background-color: #806be7;
       }
+      @include md {
+        padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+        font-size: 0.8rem;
+      }
     }
   }
 
   
   .image {
-    // height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
-    // position: absolute;
+    position: absolute;
     z-index: -1;
-    // width: 100%;
-    // right: 5rem;
-    // float: right;
+    height: 100vh;
+    right: 0rem;
+    @include xl {
+      opacity: 30%;
+    }
+    > div {
+      width: 1130px;
+      height: 900px;
+      position: relative;
+      right: -10rem;
+      @include lg {
+        right: -30rem;
+        @include md {
+          top: 1rem;
+          right: -45rem;
+        }
+      }
+    }
   }
 }

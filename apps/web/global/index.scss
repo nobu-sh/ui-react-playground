@@ -11,6 +11,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: thin;
+  text-rendering: optimizeLegibility;
   scrollbar-color: var(--accent) var(--background);
   -webkit-tap-highlight-color: transparent;
 }
@@ -32,10 +33,156 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // overflow-x;
+  text-rendering: optimizeLegibility;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a:any-link {
+  color: #93b5ff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1.Large {
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h1.Small {
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h4 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: unset;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h5 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: unset;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h6 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: unset;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+
+p.Large {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+p.Small {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+p.ExtraSmall {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Inter';
+  font-weight: 400;
 }
